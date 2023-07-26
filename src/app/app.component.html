@@ -1,7 +1,7 @@
 <app-header (headerNavEvent)="switchPage($event)" ></app-header>
 <div class="container">
   <div class="col-md-12">
-    <app-recipes></app-recipes>
-    <app-shopping-list></app-shopping-list>
+    <app-recipes *ngIf="pageToShow === 'recipe'" ></app-recipes>
+    <app-shopping-list *ngIf="pageToShow === 'shopping-list'" ></app-shopping-list>
   </div>
 </div>
