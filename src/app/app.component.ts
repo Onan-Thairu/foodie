@@ -6,10 +6,4 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'foodie';
-  pageToShow: string = 'recipe'
-
-  switchPage(page: string) {
-    this.pageToShow = page
-  }
 }
